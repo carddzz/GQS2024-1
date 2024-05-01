@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Matriz {
+	 public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in); // Cria um Scanner para leitura dos dados de entrada
+	        int[][] matriz = new int[5][5]; // Declara uma matriz 5x5
+
+	        // Lê os valores para a matriz
+	        System.out.println("Digite os valores da matriz 5x5:");
+	        for (int i = 0; i < 5; i++) { // Loop externo linhas da matriz
+	            for (int j = 0; j < 5; j++) { // Loop interno colunas da matriz
+	                System.out.printf("Elemento [%d][%d]: ", i, j);
+	                matriz[i][j] = scanner.nextInt(); // Lê um inteiro do teclado armazenando na posição [i][j] da matriz
+	            }
+	        }
+
+	        // Imprime a matriz
+	        System.out.println("\nMatriz informada:");
+	        for (int i = 0; i < 5; i++) { // Loop externo linhas da matriz
+	            for (int j = 0; j < 5; j++) { // Loop interno colunas da matriz
+	                System.out.print(matriz[i][j] + " "); // Imprime o elemento na posição [i][j] seguido de um espaço
+	            }
+	            System.out.println(); // 
+	        }
+
+	        scanner.close(); // Fecha o scanner 
+	    }
+	}
+
+
